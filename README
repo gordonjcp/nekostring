@@ -28,6 +28,28 @@ What you want is something like "jack-dssi-host nekostring.so" - the GUI should 
 The first release will at least have the Ensemble effect controllable over DSSI.
 
 
+INSTALLATION
+
+You need to install the following dependencies. They may have different names on different distros.
+
+ * build-essential
+ * ladspa-sdk
+ * dssi-dev
+ * liblo-dev
+ * libgtk2.0-dev
+
+There might be a few more on your system, depending on what you've already installed.
+
+Next, you want to run 'autoreconf' until the only thing it complains about is the _SOURCES line in gui/Makefile.am. You may need to run libtoolize first. Automake is a confusing and awful thing.
+
+Finally, you will be able to run the following commands:
+
+ $ make
+ $ make check # tests
+ $ sudo make install
+
+If you get errors, stop and diagnose them, rather than trying to bull ahead. At the end of it, you should have a nekostring.so library that you can use in a DAW or via JACK.
+
 -----------------------
  Copyright information 
 -----------------------

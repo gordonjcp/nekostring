@@ -5,11 +5,9 @@
 AC_PREREQ(2.59)
 
 # name and version for package
-AC_INIT(configure.ac)
-AM_INIT_AUTOMAKE(nekostring, 0.1.1)
-
-# make sure we're looking in the right place, for --srcdir
-AC_CONFIG_SRCDIR([config.h.in])
+AC_INIT([nekostring], [0.1.1])
+AC_CONFIG_SRCDIR([config.h.in]) # make sure we're looking in the right place, for --srcdir
+AM_INIT_AUTOMAKE
 
 # config defines go into this file
 AC_CONFIG_HEADER([config.h])
@@ -18,6 +16,7 @@ AC_CONFIG_HEADER([config.h])
 AC_PROG_CXX
 AC_PROG_CC
 AC_PROG_CPP
+AM_PROG_CC_C_O
 AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_MAKE_SET

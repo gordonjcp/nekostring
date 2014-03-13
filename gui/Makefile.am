@@ -8,7 +8,7 @@ else
 bin_PROGRAMS =
 endif
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" 
 #	@PACKAGE_CFLAGS@
 
