@@ -9,6 +9,9 @@ AC_INIT([nekostring], [0.1.1])
 AC_CONFIG_SRCDIR([config.h.in]) # make sure we're looking in the right place, for --srcdir
 AM_INIT_AUTOMAKE
 
+# No need for a static library
+LT_INIT([disable-static])
+
 # config defines go into this file
 AC_CONFIG_HEADER([config.h])
 
