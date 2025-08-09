@@ -35,7 +35,7 @@
 
 //float sine_wave[], triangle_wave[];
 
-float sine_wave[4 + WAVE_POINTS + 1], triangle_wave[4 + WAVE_POINTS + 1];
+extern float sine_wave[4 + WAVE_POINTS + 1], triangle_wave[4 + WAVE_POINTS + 1];
 
 /*
  * neko_synth_t

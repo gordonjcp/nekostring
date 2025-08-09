@@ -37,6 +37,78 @@
 #define GLADE_HOOKUP_OBJECT_NO_REF(component,widget,name) \
   g_object_set_data (G_OBJECT (component), name, widget)
 
+GtkWidget *voice_widget[NEKO_PORTS_COUNT];
+  GtkWidget *window1;
+  GtkWidget *notebook1;
+  GtkWidget *vbox1;
+  GtkWidget *hbox1;
+  GtkWidget *frame_voicing;
+  GtkWidget *alignment3;
+  GtkWidget *hbox2;
+  GtkWidget *vb_contrabass;
+  GtkWidget *vs_bass;
+  GtkWidget *label8;
+  GtkWidget *vbox4;
+  GtkWidget *vs_cello;
+  GtkWidget *label10;
+  GtkWidget *vbox5;
+  GtkWidget *vs_viola;
+  GtkWidget *label11;
+  GtkWidget *vbox6;
+  GtkWidget *vs_violin;
+  GtkWidget *label12;
+  GtkWidget *label_voicing;
+  GtkWidget *frame_ensemble;
+  GtkWidget *alignment2;
+  GtkWidget *hbox3;
+  GtkWidget *vbox7;
+  GtkWidget *vs_cspeed;
+  GtkWidget *label13;
+  GtkWidget *vbox8;
+  GtkWidget *vs_cdepth;
+  GtkWidget *label14;
+  GtkWidget *vbox9;
+  GtkWidget *vs_vspeed;
+  GtkWidget *label15;
+  GtkWidget *vbox10;
+  GtkWidget *vs_vdepth;
+  GtkWidget *label16;
+  GtkWidget *label_ensemble;
+  GtkWidget *frame4;
+  GtkWidget *alignment4;
+  GtkWidget *hbox4;
+  GtkWidget *vbox11;
+  GtkWidget *vs_tone;
+  GtkWidget *label18;
+  GtkWidget *vbox12;
+  GtkWidget *vs_volume;
+  GtkWidget *label19;
+  GtkWidget *label17;
+  GtkWidget *hbox5;
+  GtkWidget *image1;
+  GtkWidget *frame5;
+  GtkWidget *alignment5;
+  GtkWidget *hbox6;
+  GtkWidget *vbox17;
+  GtkWidget *vscale19;
+  GtkWidget *label25;
+  GtkWidget *vbox18;
+  GtkWidget *vscale20;
+  GtkWidget *label26;
+  GtkWidget *vbox19;
+  GtkWidget *vscale21;
+  GtkWidget *label27;
+  GtkWidget *label23;
+  GtkWidget *frame6;
+  GtkWidget *alignment6;
+  GtkWidget *vbox16;
+  GtkWidget *combobox1;
+  GtkWidget *btn_savepatch;
+  GtkWidget *label24;
+  GtkWidget *label_main;
+  GtkWidget *image2;
+  GtkWidget *label2;
+
 GtkWidget*
 create_window1 (void)
 {

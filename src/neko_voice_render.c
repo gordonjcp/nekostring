@@ -31,7 +31,7 @@ static int   tables_initialized = 0;
 float        neko_pitch[128];
 
 
-//static float sine_wave[4 + WAVE_POINTS + 1], triangle_wave[4 + WAVE_POINTS + 1];
+float sine_wave[4 + WAVE_POINTS + 1], triangle_wave[4 + WAVE_POINTS + 1];
 
 #define pitch_ref_note 69
 
